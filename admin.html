@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>مدیریت</title><link rel="stylesheet" href="assets/style.css"></head><body>
+<header><span class="logo">🔐 پنل مدیریت</span><button class="ghost" id="out" hidden style="margin-inline-start:auto">خروج</button></header>
+<main>
+<section id="login" style="max-width:420px;margin:60px auto;display:grid;gap:12px"><h2>ورود مدیر</h2><p class="meta">توکن دسترسی GitHub را وارد کنید. فقط در همین تب نگه‌داری می‌شود و با بستن تب پاک می‌شود.</p><input id="tk" type="password" placeholder="github_pat_…" autocomplete="off" dir="ltr"><button id="go">ورود</button></section>
+<section id="app" hidden>
+<div class="row"><button id="nf">+ پوشهٔ جدید</button><label><input type="checkbox" id="dl" style="width:auto"> فایل‌های جدید قابل دانلود باشند</label></div>
+<label class="drop" id="drop">فایل‌ها را اینجا رها کنید یا برای انتخاب کلیک کنید<input type="file" id="pick" multiple hidden></label>
+<div class="bar"><i id="pb"></i></div>
+<details><summary>نوشتن متن جدید</summary><input id="nt" placeholder="عنوان متن"><textarea id="nb" rows="5" placeholder="متن…"></textarea><button id="sn">ذخیرهٔ متن</button></details>
+<p id="msg" class="meta"></p><div class="crumbs" id="crumbs"></div><div class="grid" id="list"></div>
+</section></main>
+<dialog id="dlg"></dialog><script src="assets/core.js"></script><script src="assets/admin.js"></script></body></html>
